@@ -32,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSArray<id<JCFrame>> *)decodeVideoFramesWithDuration:(CGFloat)duration error:(NSError **)error;
 
+/**
+ * @brief 重置资源
+ */
+- (void)reset;
+
 @end
 
 NS_ASSUME_NONNULL_END

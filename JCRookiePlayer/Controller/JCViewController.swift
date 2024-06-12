@@ -61,6 +61,7 @@ class JCViewController: UIViewController {
         let beforeTime: CFAbsoluteTime = CFAbsoluteTimeGetCurrent() * 1000
         syncController.openFile(withFilePath: URL) { [self] videoContext in
             let afterTime: CFAbsoluteTime = CFAbsoluteTimeGetCurrent() * 1000
+            print("[JCViewController] Open file time consuming:", afterTime - beforeTime)
             playerView.prepare(with: videoContext.videoInfo)
             audioRender.prepare(withVideoInfo: videoContext.audioInfo)
         }
@@ -85,6 +86,9 @@ extension JCViewController: JCPlayerDecoderMonitor {
             break
         case JCPlayerState.preparing:
             break
+        case JCPlayerState.finished:
+            stop()
+            break
         default:
             break
         }
@@ -100,5 +104,6 @@ extension JCViewController: PlayControl {
     }
     func stop() {
         audioRender.stop()
+        playerView.reset()
     }
 }

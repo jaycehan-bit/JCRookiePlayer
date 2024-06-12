@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)renderVideoFrame:(id<JCVideoFrame>)videoFrame;
 
+- (void)reset;
+
 @end
 
 NS_ASSUME_NONNULL_END

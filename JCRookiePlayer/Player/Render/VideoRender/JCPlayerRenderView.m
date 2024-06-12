@@ -213,6 +213,32 @@ static const GLfloat indices[] = {
     }
 }
 
+- (void)reset {
+    __weak typeof(self) weakSelf = self;
+    NSOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+        if (!weakSelf) {
+            return;
+        }
+        glClearColor(0.0, 0.0, 0.0, 1.0);
+        glClear(GL_COLOR_BUFFER_BIT);
+        
+        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        const GLuint frameBuffer = weakSelf.frameBuffer;
+        weakSelf.frameBuffer = 0;
+        glDeleteFramebuffers(1, &frameBuffer);
+        
+        glBindRenderbuffer(GL_RENDERBUFFER, 0);
+        const GLuint renderBuffer = weakSelf.renderBuffer;
+        weakSelf.renderBuffer = 0;
+        glDeleteRenderbuffers(1, &renderBuffer);
+        
+        weakSelf.EAGLContext = nil;
+        [EAGLContext setCurrentContext:nil];
+    }];
+    [self.renderQueue cancelAllOperations];
+    [self.renderQueue addOperation:operation];
+}
+
 #pragma mark - Initialize
 
 - (NSOperationQueue *)renderQueue {

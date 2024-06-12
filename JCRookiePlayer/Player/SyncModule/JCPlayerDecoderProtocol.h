@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, JCPlayerState) {
     JCPlayerStatePreparing = 1,
     JCPlayerStatePrepared = 2,
+    JCPlayerStateFinished = 3,
 };
 
 @protocol JCPlayerDecoderMonitor <NSObject>

@@ -106,6 +106,11 @@ static const NSTimeInterval gJCPlayerMaximumGap = 0.05;
             self.currentAudioFrameOffset = 0;
         }
     }
+    if (!self.videoFrameQueue.count && !self.audioFrameQueue.count && self.decoder.isFinish) {
+        [self dispatchStateEventWithState:JCPlayerStateFinished];
+        [self.decoder reset];
+        return;
+    }
     if (self.decodedDuration < gJCPlayerMinimumDuration) {
         dispatch_semaphore_signal(self.semaphore);
     }
@@ -147,6 +152,7 @@ static const NSTimeInterval gJCPlayerMaximumGap = 0.05;
                         // 解码完成
                         break;
                     }
+                    [self.frameQueueLock lock];
                     for (id<JCFrame> frame in frames) {
                         if (frame.type == JCFrameTypeAudio) {
                             [self.audioFrameQueue addObject:(id<JCAudioFrame>)frame];
@@ -156,6 +162,7 @@ static const NSTimeInterval gJCPlayerMaximumGap = 0.05;
                             [self.videoFrameQueue addObject:(id<JCVideoFrame>)frame];
                         }
                     }
+                    [self.frameQueueLock unlock];
                 }
             }
             callBack ? callBack() : nil;

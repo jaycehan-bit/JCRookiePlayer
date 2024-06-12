@@ -113,6 +113,8 @@ static const CGFloat JCPlayerRatio = 16 / 9.0;
         case JCPlayerStatePrepared:
             [self play];
             break;
+        case JCPlayerStateFinished:
+            break;
         default:
             break;
     }

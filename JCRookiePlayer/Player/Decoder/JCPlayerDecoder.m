@@ -117,6 +117,11 @@
     return nil;
 }
 
+- (void)reset {
+    self.finish = NO;
+    self.formatContext = nil;
+}
+
 #pragma mark - Init
 
 - (id<JCPlayerVideoDecoder>)videoDecoder {
