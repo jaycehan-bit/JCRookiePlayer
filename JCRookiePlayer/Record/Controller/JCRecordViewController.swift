@@ -9,6 +9,7 @@ import Foundation
 
 class JCRecordViewController {
     
+    
 }
 
 extension JCRecordViewController: JCRecord {
