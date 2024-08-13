@@ -39,10 +39,12 @@ AVFormatContext * formate_context(NSString *URL) {
     int node_result = avformat_open_input(&formatContext, url, NULL, NULL);
     if (node_result != 0) {
         NSLog(@"❌❌❌ Open input failed with errorCode:%d", node_result);
+        return NULL;
     }
     node_result = avformat_find_stream_info(formatContext, NULL);
     if (node_result < 0) {
         NSLog(@"❌❌❌ Find stream info failed with errorCode:%d", node_result);
+        return NULL;
     }
     
     if (node_result < 0) {

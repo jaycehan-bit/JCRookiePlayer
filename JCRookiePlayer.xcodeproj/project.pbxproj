@@ -39,6 +39,8 @@
 		4E022E562C14AC0600094225 /* JCProgramProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E022E522C14AC0600094225 /* JCProgramProvider.m */; };
 		4E022E572C14AC0600094225 /* JCProgramArena.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E022E532C14AC0600094225 /* JCProgramArena.m */; };
 		4E022E622C14B79B00094225 /* JCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E022E612C14B79B00094225 /* JCViewController.swift */; };
+		4E07B1AC2C6B93D700622E7C /* JCRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07B1AB2C6B93D700622E7C /* JCRecordViewController.swift */; };
+		4E07B1AE2C6B941000622E7C /* JCRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07B1AD2C6B941000622E7C /* JCRecord.swift */; };
 		4E1CACEF2C15E0AA00356556 /* JCPlayerLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1CACEE2C15E0AA00356556 /* JCPlayerLayoutHelper.swift */; };
 		4E1CACF22C15EC9900356556 /* ikun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E1CACF12C15E49100356556 /* ikun.mp4 */; };
 		4E7520142C057B45003DA22B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7520132C057B45003DA22B /* AppDelegate.m */; };
@@ -263,6 +265,8 @@
 		4E022E552C14AC0600094225 /* JCProgramArena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCProgramArena.h; sourceTree = "<group>"; };
 		4E022E602C14B79A00094225 /* JCRookiePlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCRookiePlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E022E612C14B79B00094225 /* JCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCViewController.swift; sourceTree = "<group>"; };
+		4E07B1AB2C6B93D700622E7C /* JCRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRecordViewController.swift; sourceTree = "<group>"; };
+		4E07B1AD2C6B941000622E7C /* JCRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRecord.swift; sourceTree = "<group>"; };
 		4E1CACEE2C15E0AA00356556 /* JCPlayerLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCPlayerLayoutHelper.swift; sourceTree = "<group>"; };
 		4E1CACF12C15E49100356556 /* ikun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ikun.mp4; sourceTree = "<group>"; };
 		4E75200F2C057B45003DA22B /* JCRookiePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCRookiePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -549,9 +553,8 @@
 		4E022E112C14AB7D00094225 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4E022E0E2C14AB7D00094225 /* JCPlayer.h */,
-				4E022E0F2C14AB7D00094225 /* JCPlayerViewController.h */,
-				4E022E102C14AB7D00094225 /* JCPlayerViewController.m */,
+				4E07B1AA2C6B93B000622E7C /* Record */,
+				4E07B1A92C6B93A700622E7C /* Player */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -712,6 +715,25 @@
 				4E022E602C14B79A00094225 /* JCRookiePlayer-Bridging-Header.h */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4E07B1A92C6B93A700622E7C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				4E022E0E2C14AB7D00094225 /* JCPlayer.h */,
+				4E022E0F2C14AB7D00094225 /* JCPlayerViewController.h */,
+				4E022E102C14AB7D00094225 /* JCPlayerViewController.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		4E07B1AA2C6B93B000622E7C /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				4E07B1AB2C6B93D700622E7C /* JCRecordViewController.swift */,
+				4E07B1AD2C6B941000622E7C /* JCRecord.swift */,
+			);
+			path = Record;
 			sourceTree = "<group>";
 		};
 		4E1CACED2C15E09100356556 /* Utils */ = {
@@ -928,6 +950,7 @@
 			files = (
 				4E022E562C14AC0600094225 /* JCProgramProvider.m in Sources */,
 				4E022E622C14B79B00094225 /* JCViewController.swift in Sources */,
+				4E07B1AC2C6B93D700622E7C /* JCRecordViewController.swift in Sources */,
 				4E022E422C14AB7D00094225 /* JCPlayerViewController.m in Sources */,
 				4E75201A2C057B45003DA22B /* ViewController.m in Sources */,
 				4E022E572C14AC0600094225 /* JCProgramArena.m in Sources */,
@@ -944,6 +967,7 @@
 				4E022E4F2C14AB7D00094225 /* JCPlayerAsynModuleDefine.m in Sources */,
 				4E7520172C057B45003DA22B /* SceneDelegate.m in Sources */,
 				4E022E432C14AB7D00094225 /* JCPlayerAudioDecoder.m in Sources */,
+				4E07B1AE2C6B941000622E7C /* JCRecord.swift in Sources */,
 				4E022E4E2C14AB7D00094225 /* JCPlayerRenderView.m in Sources */,
 				4E022E502C14AB7D00094225 /* JCPlayerSyncController.m in Sources */,
 				4E022E442C14AB7D00094225 /* JCVideoContext.m in Sources */,
@@ -1126,6 +1150,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P2VK525HWZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -57,7 +57,7 @@ static const CGFloat JCPlayerRatio = 16 / 9.0;
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-//    self.playerView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width / JCPlayerRatio);
+    self.playerView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width / JCPlayerRatio);
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -145,11 +145,11 @@ static const CGFloat JCPlayerRatio = 16 / 9.0;
 }
 
 - (void)nextButtonDidClick {
-    CGFloat width = self.view.bounds.size.width;
-    if (fabs(width - self.playerView.bounds.size.width) < 1) {
-        width *= 0.75;
-    }
-    self.playerView.frame = CGRectMake(0, 0, width, width / JCPlayerRatio);
+//    CGFloat width = self.view.bounds.size.width;
+//    if (fabs(width - self.playerView.bounds.size.width) < 1) {
+//        width *= 0.75;
+//    }
+//    self.playerView.frame = CGRectMake(0, 0, width, width / JCPlayerRatio);
 }
 
 @end
