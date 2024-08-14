@@ -55,6 +55,7 @@
 		4E75202F2C057B48003DA22B /* JCRookiePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75202E2C057B48003DA22B /* JCRookiePlayerTests.m */; };
 		4E7520392C057B48003DA22B /* JCRookiePlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7520382C057B48003DA22B /* JCRookiePlayerUITests.m */; };
 		4E75203B2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75203A2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m */; };
+		4EF175652C6CA52A00B987D4 /* JCAudioEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF175632C6CA52A00B987D4 /* JCAudioEncoder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,6 +291,8 @@
 		4E7520342C057B48003DA22B /* JCRookiePlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCRookiePlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7520382C057B48003DA22B /* JCRookiePlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRookiePlayerUITests.m; sourceTree = "<group>"; };
 		4E75203A2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRookiePlayerUITestsLaunchTests.m; sourceTree = "<group>"; };
+		4EF175632C6CA52A00B987D4 /* JCAudioEncoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JCAudioEncoder.cpp; sourceTree = "<group>"; };
+		4EF175642C6CA52A00B987D4 /* JCAudioEncoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JCAudioEncoder.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -742,6 +745,7 @@
 		4E07B1AF2C6BA2FA00622E7C /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				4EF1755F2C6CA4B300B987D4 /* Encoder */,
 				4E07B1B32C6BB7C700622E7C /* Define */,
 				4E07B1B02C6BA35F00622E7C /* AudioRecord */,
 				4E07B1AA2C6B93B000622E7C /* Controller */,
@@ -841,6 +845,15 @@
 				4E75203A2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m */,
 			);
 			path = JCRookiePlayerUITests;
+			sourceTree = "<group>";
+		};
+		4EF1755F2C6CA4B300B987D4 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				4EF175642C6CA52A00B987D4 /* JCAudioEncoder.hpp */,
+				4EF175632C6CA52A00B987D4 /* JCAudioEncoder.cpp */,
+			);
+			path = Encoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -978,6 +991,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF175652C6CA52A00B987D4 /* JCAudioEncoder.cpp in Sources */,
 				4E022E562C14AC0600094225 /* JCProgramProvider.m in Sources */,
 				4E022E622C14B79B00094225 /* JCViewController.swift in Sources */,
 				4E07B1AC2C6B93D700622E7C /* JCRecordViewController.swift in Sources */,
