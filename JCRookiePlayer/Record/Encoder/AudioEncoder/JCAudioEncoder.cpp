@@ -36,13 +36,13 @@ JCAudioEncoderError JCAudioEncoder::init(int bitRate, int channels, int sampleRa
     this->codec_context->profile = FF_PROFILE_AAC_MAIN;
     // 60帧
     this->codec_context->framerate = AVRational{60, 1};
+    this->codec_context->frame_size = 1024;
     status = avcodec_open2(this->codec_context, codec, NULL);
     if (status != 0) {
         return JCAudioEncoderErrorCodecOpen;
     }
     
     this->input_frame = av_frame_alloc();
-    this->input_frame->nb_samples = 1024;
     this->input_frame->format = AV_SAMPLE_FMT_S16;
     this->input_frame->channel_layout = av_get_default_channel_layout(channels);
     this->input_frame->sample_rate = sampleRate;
