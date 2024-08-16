@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "JCRookiePlayer-Swift.h"
+#import "ViewController.h"
 
 @interface SceneDelegate ()
 
@@ -16,7 +16,7 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    UIViewController *controller = [[JCViewController alloc] initWithNibName:nil bundle:nil];
+    UIViewController *controller = [[ViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
