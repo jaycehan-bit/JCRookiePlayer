@@ -39,10 +39,6 @@
 		4E022E562C14AC0600094225 /* JCProgramProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E022E522C14AC0600094225 /* JCProgramProvider.m */; };
 		4E022E572C14AC0600094225 /* JCProgramArena.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E022E532C14AC0600094225 /* JCProgramArena.m */; };
 		4E022E622C14B79B00094225 /* JCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E022E612C14B79B00094225 /* JCViewController.swift */; };
-		4E07B1AC2C6B93D700622E7C /* JCRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07B1AB2C6B93D700622E7C /* JCRecordViewController.swift */; };
-		4E07B1AE2C6B941000622E7C /* JCRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07B1AD2C6B941000622E7C /* JCRecord.swift */; };
-		4E07B1B22C6BA38600622E7C /* JCPlayerAudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07B1B12C6BA38600622E7C /* JCPlayerAudioRecord.swift */; };
-		4E07B1B52C6BB7D900622E7C /* JCRecordDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07B1B42C6BB7D900622E7C /* JCRecordDefine.swift */; };
 		4E1CACEF2C15E0AA00356556 /* JCPlayerLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1CACEE2C15E0AA00356556 /* JCPlayerLayoutHelper.swift */; };
 		4E1CACF22C15EC9900356556 /* ikun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E1CACF12C15E49100356556 /* ikun.mp4 */; };
 		4E7520142C057B45003DA22B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7520132C057B45003DA22B /* AppDelegate.m */; };
@@ -55,8 +51,6 @@
 		4E75202F2C057B48003DA22B /* JCRookiePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75202E2C057B48003DA22B /* JCRookiePlayerTests.m */; };
 		4E7520392C057B48003DA22B /* JCRookiePlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7520382C057B48003DA22B /* JCRookiePlayerUITests.m */; };
 		4E75203B2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75203A2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m */; };
-		4EF175652C6CA52A00B987D4 /* JCAudioEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF175632C6CA52A00B987D4 /* JCAudioEncoder.cpp */; };
-		4EF18DD42C6DD44F00B987D4 /* JCPlayerVideoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF18DD32C6DD44F00B987D4 /* JCPlayerVideoRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,10 +263,6 @@
 		4E022E552C14AC0600094225 /* JCProgramArena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCProgramArena.h; sourceTree = "<group>"; };
 		4E022E602C14B79A00094225 /* JCRookiePlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCRookiePlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E022E612C14B79B00094225 /* JCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCViewController.swift; sourceTree = "<group>"; };
-		4E07B1AB2C6B93D700622E7C /* JCRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRecordViewController.swift; sourceTree = "<group>"; };
-		4E07B1AD2C6B941000622E7C /* JCRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRecord.swift; sourceTree = "<group>"; };
-		4E07B1B12C6BA38600622E7C /* JCPlayerAudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCPlayerAudioRecord.swift; sourceTree = "<group>"; };
-		4E07B1B42C6BB7D900622E7C /* JCRecordDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCRecordDefine.swift; sourceTree = "<group>"; };
 		4E1CACEE2C15E0AA00356556 /* JCPlayerLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCPlayerLayoutHelper.swift; sourceTree = "<group>"; };
 		4E1CACF12C15E49100356556 /* ikun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ikun.mp4; sourceTree = "<group>"; };
 		4E75200F2C057B45003DA22B /* JCRookiePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCRookiePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,9 +282,6 @@
 		4E7520342C057B48003DA22B /* JCRookiePlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCRookiePlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7520382C057B48003DA22B /* JCRookiePlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRookiePlayerUITests.m; sourceTree = "<group>"; };
 		4E75203A2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRookiePlayerUITestsLaunchTests.m; sourceTree = "<group>"; };
-		4EF175632C6CA52A00B987D4 /* JCAudioEncoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JCAudioEncoder.cpp; sourceTree = "<group>"; };
-		4EF175642C6CA52A00B987D4 /* JCAudioEncoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JCAudioEncoder.hpp; sourceTree = "<group>"; };
-		4EF18DD32C6DD44F00B987D4 /* JCPlayerVideoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCPlayerVideoRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -735,43 +722,6 @@
 			path = Player;
 			sourceTree = "<group>";
 		};
-		4E07B1AA2C6B93B000622E7C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4E07B1AB2C6B93D700622E7C /* JCRecordViewController.swift */,
-				4E07B1AD2C6B941000622E7C /* JCRecord.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4E07B1AF2C6BA2FA00622E7C /* Record */ = {
-			isa = PBXGroup;
-			children = (
-				4EF18DD22C6DD40200B987D4 /* VideoRecord */,
-				4EF1755F2C6CA4B300B987D4 /* Encoder */,
-				4E07B1B32C6BB7C700622E7C /* Define */,
-				4E07B1B02C6BA35F00622E7C /* AudioRecord */,
-				4E07B1AA2C6B93B000622E7C /* Controller */,
-			);
-			path = Record;
-			sourceTree = "<group>";
-		};
-		4E07B1B02C6BA35F00622E7C /* AudioRecord */ = {
-			isa = PBXGroup;
-			children = (
-				4E07B1B12C6BA38600622E7C /* JCPlayerAudioRecord.swift */,
-			);
-			path = AudioRecord;
-			sourceTree = "<group>";
-		};
-		4E07B1B32C6BB7C700622E7C /* Define */ = {
-			isa = PBXGroup;
-			children = (
-				4E07B1B42C6BB7D900622E7C /* JCRecordDefine.swift */,
-			);
-			path = Define;
-			sourceTree = "<group>";
-		};
 		4E1CACED2C15E09100356556 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -813,7 +763,6 @@
 		4E7520112C057B45003DA22B /* JCRookiePlayer */ = {
 			isa = PBXGroup;
 			children = (
-				4E07B1AF2C6BA2FA00622E7C /* Record */,
 				4E1CACF02C15E47C00356556 /* VideoSource */,
 				4E1CACED2C15E09100356556 /* Utils */,
 				4E022E582C14AC7200094225 /* Controller */,
@@ -848,39 +797,6 @@
 				4E75203A2C057B48003DA22B /* JCRookiePlayerUITestsLaunchTests.m */,
 			);
 			path = JCRookiePlayerUITests;
-			sourceTree = "<group>";
-		};
-		4EF1755F2C6CA4B300B987D4 /* Encoder */ = {
-			isa = PBXGroup;
-			children = (
-				4EF18DD12C6DD3E100B987D4 /* AudioEncoder */,
-				4EF18DD02C6DD3D600B987D4 /* VideoEncoder */,
-			);
-			path = Encoder;
-			sourceTree = "<group>";
-		};
-		4EF18DD02C6DD3D600B987D4 /* VideoEncoder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VideoEncoder;
-			sourceTree = "<group>";
-		};
-		4EF18DD12C6DD3E100B987D4 /* AudioEncoder */ = {
-			isa = PBXGroup;
-			children = (
-				4EF175642C6CA52A00B987D4 /* JCAudioEncoder.hpp */,
-				4EF175632C6CA52A00B987D4 /* JCAudioEncoder.cpp */,
-			);
-			path = AudioEncoder;
-			sourceTree = "<group>";
-		};
-		4EF18DD22C6DD40200B987D4 /* VideoRecord */ = {
-			isa = PBXGroup;
-			children = (
-				4EF18DD32C6DD44F00B987D4 /* JCPlayerVideoRecord.swift */,
-			);
-			path = VideoRecord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1018,10 +934,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF175652C6CA52A00B987D4 /* JCAudioEncoder.cpp in Sources */,
 				4E022E562C14AC0600094225 /* JCProgramProvider.m in Sources */,
 				4E022E622C14B79B00094225 /* JCViewController.swift in Sources */,
-				4E07B1AC2C6B93D700622E7C /* JCRecordViewController.swift in Sources */,
 				4E022E422C14AB7D00094225 /* JCPlayerViewController.m in Sources */,
 				4E75201A2C057B45003DA22B /* ViewController.m in Sources */,
 				4E022E572C14AC0600094225 /* JCProgramArena.m in Sources */,
@@ -1032,17 +946,13 @@
 				4E022E472C14AB7D00094225 /* JCPlayerDecoder.m in Sources */,
 				4E022E462C14AB7D00094225 /* JCPlayerVideoDecoder.m in Sources */,
 				4E022E492C14AB7D00094225 /* JCPlayerVideoFrame.m in Sources */,
-				4EF18DD42C6DD44F00B987D4 /* JCPlayerVideoRecord.swift in Sources */,
 				4E1CACEF2C15E0AA00356556 /* JCPlayerLayoutHelper.swift in Sources */,
 				4E7520252C057B47003DA22B /* main.m in Sources */,
-				4E07B1B22C6BA38600622E7C /* JCPlayerAudioRecord.swift in Sources */,
 				4E022E4B2C14AB7D00094225 /* JCPlayerAudioRender.m in Sources */,
 				4E022E4F2C14AB7D00094225 /* JCPlayerAsynModuleDefine.m in Sources */,
 				4E7520172C057B45003DA22B /* SceneDelegate.m in Sources */,
 				4E022E432C14AB7D00094225 /* JCPlayerAudioDecoder.m in Sources */,
-				4E07B1AE2C6B941000622E7C /* JCRecord.swift in Sources */,
 				4E022E4E2C14AB7D00094225 /* JCPlayerRenderView.m in Sources */,
-				4E07B1B52C6BB7D900622E7C /* JCRecordDefine.swift in Sources */,
 				4E022E502C14AB7D00094225 /* JCPlayerSyncController.m in Sources */,
 				4E022E442C14AB7D00094225 /* JCVideoContext.m in Sources */,
 			);
